@@ -47,10 +47,12 @@ export const Skill_data = [
     {
       name: "Linkedin",
       src: "/linkedin.png",
+      to: "https://www.linkedin.com/in/santino-mantineo-318231201/"
     },
     {
       name: "Github",
       src: "/gitwhite.png",
+      to: "https://github.com/SantinoMantineo"
     },
   ];
   
