@@ -129,8 +129,8 @@ export const Skill_data = [
     {
       skill_name: "MercadoPago",
       Image: "/mercadopago.jpg",
-      width: 70,
-      height: 70,
+      width: 67,
+      height: 67,
     },
   ];
   
