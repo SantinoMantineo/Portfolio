@@ -81,12 +81,6 @@ export const Skill_data = [
       width: 70,
       height: 70,
     },
-    {
-      skill_name: "React Native",
-      Image: "/ReactNative .png",
-      width: 70,
-      height: 70,
-    },
   ];
   
   export const Full_stack = [

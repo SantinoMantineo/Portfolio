@@ -22,7 +22,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-row items-center justify-center px-4 sm:px-23 mt-40 w-full z-[20]" // Adjusted padding for smaller screens
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -60,18 +60,19 @@ const HeroContent = () => {
           and Software development. Check out my projects and skills.
         </motion.p>
 
-        <div className="flex gap-4 w-auto">
+        <div className="flex flex-col sm:flex-row gap-4 w-auto">
           <motion.a
             variants={slideInFromLeft(1)}
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] pl-[10px] pr-[10px]"
+            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg min-w-[220px] pl-[10px] pr-[10px]"
             onClick={handleDownload}
           >
             Download CV
           </motion.a>
 
+          {/* Botón de LinkedIn */}
           <motion.a
             variants={slideInFromLeft(1)}
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] pl-[10px] pr-[10px]"
+            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg min-w-[220px] pl-[10px] pr-[10px]"
             href="https://www.linkedin.com/in/santino-mantineo-318231201/"
             target="_blank"
             rel="noopener noreferrer"

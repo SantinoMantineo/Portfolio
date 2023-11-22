@@ -12,17 +12,17 @@ const projectsData = [
     webUrl: "https://locanjeamos.com.ar",
   },
   {
-    src: "/DogsClub.JPG",
-    title: "Dog's Club",
-    description: "Bring your dream dogs to life with our intuitive creation feature. Customize breeds, colors, and personalities to design your perfect virtual pup.",
-    repoUrl: "https://github.com/SantinoMantineo/PI-Dogs-main",
-  },
-  {
     src: "/Lamp.JPG",
     title: "Ligth-Web",
     description: "The place to discover the latest trends in lighting and transform your spaces with style. Elevate your spaces with sophistication.",
     repoUrl: "https://github.com/SantinoMantineo/Light-Web",
     webUrl: "https://smt-lamp-website.netlify.app",
+  },
+  {
+    src: "/DogsClub.JPG",
+    title: "Dog's Club",
+    description: "Bring your dream dogs to life with our intuitive creation feature. Customize breeds, colors, and personalities to design your perfect virtual pup.",
+    repoUrl: "https://github.com/SantinoMantineo/PI-Dogs-main",
   },
   {
     src: "/rickymorty.JPG",
