@@ -82,7 +82,6 @@ const HeroContent = () => {
         </div>
       </div>
 
-      {window.innerWidth > 600 && (
         <motion.div
           variants={slideInFromRight(0.8)}
           className="w-full h-full flex justify-center items-center"
@@ -94,7 +93,6 @@ const HeroContent = () => {
             width={650}
           />
         </motion.div>
-      )}
     </motion.div>
   );
 };
