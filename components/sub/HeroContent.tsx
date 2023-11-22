@@ -22,7 +22,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-4 sm:px-23 mt-40 w-full z-[20]" // Adjusted padding for smaller screens
+      className="flex flex-row items-center justify-center px-4 sm:px-23 mt-40 w-full z-[20] lg:ml-20" // Ajuste de margen para pantallas grandes
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -82,17 +82,19 @@ const HeroContent = () => {
         </div>
       </div>
 
-      <motion.div
-        variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
-      >
-        <Image
-          src="/mainIconsdark.svg"
-          alt="work icons"
-          height={650}
-          width={650}
-        />
-      </motion.div>
+      {window.innerWidth > 600 && (
+        <motion.div
+          variants={slideInFromRight(0.8)}
+          className="w-full h-full flex justify-center items-center"
+        >
+          <Image
+            src="/mainIconsdark.svg"
+            alt="work icons"
+            height={650}
+            width={650}
+          />
+        </motion.div>
+      )}
     </motion.div>
   );
 };
