@@ -11,6 +11,13 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const HeroContent = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf"; // Ruta del archivo
+    link.download = "resume.pdf";
+    link.click();
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -30,15 +37,18 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[700px] w-auto h-auto"
         >
           <span>
-            Providing
+            Crafting
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              the best{" "}
+              code{" "}
             </span>
-            project exprience
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              {" "}
+              designing{" "}
+            </span>experiences
           </span>
         </motion.div>
 
@@ -46,15 +56,29 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack Developer with experience in responsibe Websites,
+          and Software development. Check out my projects and skills.
         </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          Learn More!
-        </motion.a>
+
+        <div className="flex gap-4 w-auto">
+          <motion.a
+            variants={slideInFromLeft(1)}
+            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] pl-[10px] pr-[10px]"
+            onClick={handleDownload}
+          >
+            Download CV
+          </motion.a>
+
+          <motion.a
+            variants={slideInFromLeft(1)}
+            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] pl-[10px] pr-[10px]"
+            href="https://www.linkedin.com/in/santino-mantineo-318231201/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </motion.a>
+        </div>
       </div>
 
       <motion.div

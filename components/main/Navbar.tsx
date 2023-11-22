@@ -18,7 +18,7 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="font-bold ml-[25px] hidden md:block text-gray-300">
             Santino Mantineo
           </span>
         </a>
