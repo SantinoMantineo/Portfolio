@@ -1,23 +1,24 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
+          className="h-auto w-auto flex flex-row items-center hidden md:flex" // Muestra en pantallas medianas y más grandes
         >
           <Image
             src="/NavLogo.png"
             alt="logo"
             width={50}
             height={50}
-            className="cursor-pointer hover:animate-slowspin"
+            className="cursor-pointer hover:animate-slowspin mr-[15px]"
           />
 
-          <span className="font-bold ml-[25px] hidden md:block text-gray-300">
+          <span className="font-bold ml-[25px] text-gray-300">
             Santino Mantineo
           </span>
         </a>
@@ -39,10 +40,11 @@ const Navbar = () => {
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
             <a
-              key={social.name} // Add the key prop here
+              key={social.name}
               href={social.to}
               target="_blank"
               rel="noopener noreferrer"
+              className="hidden md:inline-block" // Oculta en pantallas más pequeñas que md
             >
               <Image
                 src={social.src}

@@ -22,6 +22,7 @@ const projectsData = [
     title: "Ligth-Web",
     description: "The place to discover the latest trends in lighting and transform your spaces with style. Elevate your spaces with sophistication.",
     repoUrl: "https://github.com/SantinoMantineo/Light-Web",
+    webUrl: "https://smt-lamp-website.netlify.app",
   },
   {
     src: "/rickymorty.JPG",
