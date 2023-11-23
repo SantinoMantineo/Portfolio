@@ -24,26 +24,28 @@ const ProjectCard = ({ src, title, description, repoUrl, webUrl }: Props) => {
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
         <p className={`mt-2 text-gray-300 ${webUrl ? 'mb-[20px]' : 'mb-[35px]'}`}>{description}</p>
 
-        <a
-          className={`py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] 
-            ${webUrl ? 'ml-[15%]' : 'ml-[36%]'} pl-[10px] pr-[10px]`}
-          href={repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          See Code
-        </a>
-
-        {webUrl && (
+        <div className={`flex flex-col items-center ${webUrl ? 'mb-[20px]' : 'mb-[35px]'}`}>
           <a
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg pl-[10px] ml-[20%] pr-[10px]"
-            href={webUrl}
+            className={`py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] 
+              ${webUrl ? 'mb-[10px]' : ''} pl-[10px] pr-[10px] whitespace-nowrap`}
+            href={repoUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
-            See Live
+            See Code
           </a>
-        )}
+
+          {webUrl && (
+            <a
+              className="py-2 button-primary text-center text-white cursor-pointer rounded-lg pl-[10px] pr-[10px] whitespace-nowrap"
+              href={webUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See Live
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
