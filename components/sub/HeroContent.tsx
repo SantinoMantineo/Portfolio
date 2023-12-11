@@ -13,8 +13,8 @@ import Image from "next/image";
 const HeroContent = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.docx"; // Ruta del archivo
-    link.download = "resume.docx";
+    link.href = "/resume.pdf"; // Ruta del archivo
+    link.download = "resume.pdf";
     link.click();
   };
 
