@@ -41,6 +41,12 @@ export const Skill_data = [
       width: 80,
       height: 80,
     },
+    {
+      skill_name: "Fire base",
+      Image: "/Firebase.png",
+      width: 55,
+      height: 55,
+    },
   ];
   
   export const Socials = [
