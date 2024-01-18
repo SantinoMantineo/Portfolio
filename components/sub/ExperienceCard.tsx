@@ -25,15 +25,7 @@ const ExperienceCard = ({ src, title, description, repoUrl, webUrl }: Props) => 
         <p className={`mt-2 text-gray-300 ${webUrl ? 'mb-[20px]' : 'mb-[35px]'}`}>{description}</p>
 
         <div className={`flex flex-col items-center ${webUrl ? 'mb-[20px]' : 'mb-[35px]'}`}>
-          <a
-            className={`py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] 
-              ${webUrl ? 'mb-[10px]' : ''} pl-[10px] pr-[10px] whitespace-nowrap`}
-            href={repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See Code
-          </a>
+    
 
           {webUrl && (
             <a

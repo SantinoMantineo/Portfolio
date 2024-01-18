@@ -8,8 +8,7 @@ const projectsData = [
     src: "/tiendasLocales.JPG",
     title: "Tiendas Locales",
     description: "Tiendas Locales is a paid freelance project based on the idea of ​​E-Commerce. The web platform offers a way to connect a city of more than 15,000 inhabitants, improve the economy and facilitate the buying and selling of products between neighbors.",
-    repoUrl: "https://github.com/maxivalli/TiendasLocales",
-    webUrl: "https://tiendaslocales.com.ar",
+    webUrl: "https://www.tiendaslocales.com.ar",
   }
 ];
 
