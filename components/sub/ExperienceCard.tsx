@@ -5,11 +5,10 @@ interface Props {
   src: string;
   title: string;
   description: string;
-  repoUrl: string;
   webUrl?: string;
 }
 
-const ExperienceCard = ({ src, title, description, repoUrl, webUrl }: Props) => {
+const ExperienceCard = ({ src, title, description, webUrl }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] max-w-[400px] mx-auto">
       <Image
