@@ -9,6 +9,13 @@ const projectsData = [
     title: "Tiendas Locales",
     description: "Tiendas Locales is a paid freelance project based on the idea of ​​E-Commerce. The web platform offers a way to connect a city of more than 15,000 inhabitants, improve the economy and facilitate the buying and selling of products between neighbors.",
     webUrl: "https://www.tiendaslocales.com.ar",
+  },
+  {
+    src: "/vetli.JPG",
+    title: "Vetli",
+    description: 
+    "Vetli is a startup operating in Hong Kong and soon Europe, where I serve as a Software Engineer. The application facilitates pet owners to schedule appointments and conduct online consultations with veterinarians. My role involves driving the technical aspects of the platform, ensuring seamless functionality and user experience.",
+    webUrl: "https://wearevetli.com",
   }
 ];
 
