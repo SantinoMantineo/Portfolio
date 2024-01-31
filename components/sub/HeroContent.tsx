@@ -13,8 +13,8 @@ import Image from "next/image";
 const HeroContent = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // Ruta del archivo
-    link.download = "resume.pdf";
+    link.href = "/SantinoMantineoCV.pdf"; // Ruta del archivo
+    link.download = "SantinoMantineoCV.pdf";
     link.click();
   };
 
