@@ -10,13 +10,13 @@ interface Props {
 
 const ExperienceCard = ({ src, title, description, webUrl }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] max-w-[400px] mx-auto">
+    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] max-w-[600px]">
       <Image
         src={src}
         alt={title}
-        width={500}
-        height={500}
-        className="w-full object-contain"
+        width={600}
+        height={600}
+        className="w-full h-full object-cover"
       />
 
       <div className="relative p-4 z-40">

@@ -56,8 +56,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Developer with experience in responsibe Websites,
-          and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack Developer with experience in web
+          and software development. Check out my projects and skills.
         </motion.p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-auto">
@@ -68,8 +68,6 @@ const HeroContent = () => {
           >
             Download CV
           </motion.a>
-
-          {/* Botón de LinkedIn */}
           <motion.a
             variants={slideInFromLeft(1)}
             className="py-2 button-primary text-center text-white cursor-pointer rounded-lg min-w-[220px] pl-[10px] pr-[10px]"
