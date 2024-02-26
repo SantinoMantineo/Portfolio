@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+
+.anta {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
