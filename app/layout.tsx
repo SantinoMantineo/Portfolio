@@ -7,7 +7,7 @@ import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
-import InitialScreen from "@/components/main/InitialScreen";
+import InitialScreen from "@/components/main/Initial_Screen/InitialScreen";
 
 const inter = Inter({ subsets: ["latin"] });
 
