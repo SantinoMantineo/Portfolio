@@ -1,15 +1,33 @@
+/* InitialScreen.module.css */
 .initialScreen {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-    background: black;
-    animation: fadeOut 3s cubic-bezier(0.4, 0, 0.2, 1) forwards 5s; 
-    position: absolute;
-    z-index: 100;
-  }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  z-index: 100;
+}
+
+.initialScreen .fadeOut {
+  animation: fadeOut 5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards 3s;
+}
+
+.skipButton {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
   
   @keyframes fadeOut {
     0% {

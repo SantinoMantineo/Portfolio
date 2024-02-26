@@ -1,19 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./InitialScreen.module.css";
 
 const InitialScreen = (props: any) => {
   const { setShowContent } = props;
+  const [fadeOutActive, setFadeOutActive] = useState(false);
 
-  useEffect(() => {
-    
-    const timeout = setTimeout(() => {
-      setShowContent();
-    }, 5000); // aca controlo el tiempo que lleve que se termine de renderizar la animacion.
+  const handleSkipIntro = () => {
+    setFadeOutActive(true);
+    setShowContent();
+  };
 
-    return () => clearTimeout(timeout);
-  }, [setShowContent]);
-
-  return <div className={styles.initialScreen}></div>;
+  return (
+    <div
+      className={`${styles.initialScreen} ${fadeOutActive && styles.fadeOut}`}
+    >
+      <div>
+        {/* Contenido de tu animación aquí */}
+        <button className={styles.skipButton} onClick={handleSkipIntro}>
+          Skip Intro
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default InitialScreen;
