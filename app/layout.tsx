@@ -19,14 +19,6 @@ export default function RootLayout({
 
   const [showContent, setShowContent] = useState(false);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowContent(true);
-    }, 5000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <html lang="en">
       <body
@@ -40,7 +32,7 @@ export default function RootLayout({
             <Footer />
           </div>
         ) : (
-          <InitialScreen />
+          <InitialScreen setShowContent={()=>{setShowContent(true)}}/>
         )}
       </body>
     </html>
