@@ -5,6 +5,8 @@ const InitialScreen = (props: any) => {
   const { setShowContent } = props;
   const [fadeOutActive, setFadeOutActive] = useState(false);
 
+  // que haya una animacion, estimar el tiempo y hacer que transcurrido el tiempo se avance a la home page.
+
   const handleSkipIntro = () => {
     setFadeOutActive(true);
     setShowContent();
@@ -16,8 +18,8 @@ const InitialScreen = (props: any) => {
     >
       <div>
         {/* Contenido de tu animación aquí */}
-        <button className={styles.skipButton} onClick={handleSkipIntro}>
-          Skip Intro
+        <button className={`${styles.skipButton} text-6xl font-bold text-white"`} onClick={handleSkipIntro}>
+          SKIP INTRO
         </button>
       </div>
     </div>

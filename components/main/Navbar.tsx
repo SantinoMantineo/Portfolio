@@ -10,15 +10,8 @@ const Navbar = () => {
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center hidden md:flex" // Muestra en pantallas medianas y más grandes
         >
-          <Image
-            src="/NavLogo.png"
-            alt="logo"
-            width={50}
-            height={50}
-            className="cursor-pointer hover:animate-slowspin mr-2 md:mr-[15px]"
-          />
 
-          <span className="font-bold text-gray-300">
+          <span className="font-bolder text-lg  text-gray-400 cursive">
             Santino Mantineo
           </span>
         </a>
