@@ -1,0 +1,24 @@
+.initialScreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    animation: fadeOut 3s cubic-bezier(0.4, 0, 0.2, 1) forwards 3s; 
+    position: absolute;
+    z-index: 100;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      
+    }
+    100% {
+      opacity: 0;
+      
+    }
+  }
+  
