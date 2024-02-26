@@ -32,8 +32,8 @@ const Navbar = () => {
           <a href="#experience" className="cursor-pointer">
             Experience
           </a>
-          <a href="#projects" className="cursor-pointer">
-            Projects
+          <a href="#education" className="cursor-pointer">
+            Education
           </a>
         </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
               href={social.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-block" // Oculta en pantallas más pequeñas que md
+              className="hidden md:inline-block"
             >
               <Image
                 src={social.src}

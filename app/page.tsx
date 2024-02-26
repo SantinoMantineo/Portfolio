@@ -4,6 +4,7 @@ import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 import Image from "next/image";
 import Experience from "@/components/main/Experience";
+import Education from "@/components/main/Education";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Encryption />
-        <Projects />
+        <Education />
       </div>
     </main>
   );
