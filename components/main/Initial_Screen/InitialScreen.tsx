@@ -12,13 +12,13 @@ const InitialScreen = (props: any) => {
     setShowContent();
   }, [setShowContent]);
 
-  // useEffect(() => {
-  //   const timerId = setTimeout(() => {
-  //     handleSkipIntro();
-  //   }, 10100);
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      handleSkipIntro();
+    }, 10100);
 
-  //   return () => clearTimeout(timerId);
-  // }, [handleSkipIntro, setShowContent]);
+    return () => clearTimeout(timerId);
+  }, [handleSkipIntro, setShowContent]);
 
   return (
     <div className={`${styles.initialScreen} ${fadeOutActive && styles.fadeOut} fade-in`}>
