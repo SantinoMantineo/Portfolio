@@ -121,5 +121,15 @@
 @media screen and (max-width: 600px) {
   .initialScreen {
     max-height: 100vh;
+    min-height: fit-content;
+    grid-template-rows: 10% 1fr 10%;
+  }
+  
+  .topBar{
+    height: 10%;
+  }
+
+  .bottomBar{
+    height: 10%;
   }
 }
