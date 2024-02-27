@@ -120,6 +120,6 @@
 
 @media screen and (max-width: 600px) {
   .initialScreen {
-    min-height: 100vh;
+    max-height: 100vh;
   }
 }
