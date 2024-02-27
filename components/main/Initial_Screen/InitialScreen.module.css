@@ -117,3 +117,9 @@
     background: linear-gradient(90deg, rgba(29,253,237,1) 0%, rgba(131,58,180,1) 100%);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .initialScreen {
+    min-height: 100vh;
+  }
+}
