@@ -117,3 +117,17 @@
     background: linear-gradient(90deg, rgba(29,253,237,1) 0%, rgba(131,58,180,1) 100%);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .initialScreen {
+    grid-template-rows: 10% 1fr 10%;
+  }
+
+  .bottomBar {
+    height: 10%;
+  }
+
+  .topBar {
+    height: 10%;
+  }
+}
