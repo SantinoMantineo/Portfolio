@@ -1,5 +1,5 @@
 // InitialScreen.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./InitialScreen.module.css";
 import StarsCanvas from "../StarBackground";
 
@@ -11,6 +11,14 @@ const InitialScreen = (props: any) => {
     setFadeOutActive(true);
     setShowContent();
   };
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      handleSkipIntro();
+    }, 10100);
+
+    return () => clearTimeout(timerId);
+  }, [setShowContent]);
 
   return (
     <div className={`${styles.initialScreen} ${fadeOutActive && styles.fadeOut} fade-in`}>

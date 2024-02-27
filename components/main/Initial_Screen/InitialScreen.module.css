@@ -87,10 +87,10 @@
   width: 100%;
   height: 3px;
   background-color: black;
-  animation: drawBorder 10s linear forwards;
+  animation: drawBorder 9s linear forwards;
   bottom: 0;
   left: 0;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @keyframes fadeOut {
