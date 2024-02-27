@@ -4,6 +4,9 @@
   height: 100vh;
   background: black;
   position: absolute;
+  display: grid;
+  grid-template-rows: 15% 1fr 15%;
+  overflow: hidden;
 }
 
 .initialScreen .fadeOut {
@@ -18,23 +21,99 @@
   border: none;
   cursor: pointer;
   position: absolute;
-  bottom: 20px;
   left: 50%;
+  bottom: 20%;
   transform: translateX(-50%);
+  font-weight: 600;
 }
 
-.modelContainer{
-  position: absolute;
+.skipButton:hover {
+  background: rgb(29,253,237);
+  background: linear-gradient(90deg, rgba(29,253,237,1) 0%, rgba(131,58,180,1) 100%);
+  box-shadow: inset 0 0 15px #0d8aff70;
 }
-  
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-      
-    }
-    100% {
-      opacity: 0;
-      
-    }
+
+.textContainer {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 10px 0 10px;
+}
+
+.modelContainer {
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media {
+  grid-row: 2;
+  position: relative;
+}
+
+.bottomBar {
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.966);
+  z-index: 100;
+  -webkit-box-shadow: 0px -30px 300px -43px rgba(226,82,255,1);
+  -moz-box-shadow: 0px -30px 300px -43px rgba(226,82,255,1);
+  box-shadow: 0px -30px 300px -43px rgba(226,82,255,1);
+}
+
+.topBar {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  background: black;
+  top: 0;
+  z-index: 100;
+  -webkit-box-shadow: 0px 30px 300px -43px rgba(226,82,255,1);
+  -moz-box-shadow: 0px 30px 300px -43px rgba(226,82,255,1);
+  box-shadow: 0px 30px 300px -43px rgba(226,82,255,1);
+}
+.borderOverlay {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  animation: drawBorder 10s linear forwards;
+  bottom: 0;
+  left: 0;
+  animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
-  
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes drawBorder {
+  0% {
+    width: 0;
+  }
+  1% {
+    background: rgb(29,253,237);
+    background: linear-gradient(90deg, rgba(29,253,237,1) 0%, rgba(131,58,180,1) 100%);
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    background: rgb(29,253,237);
+    background: linear-gradient(90deg, rgba(29,253,237,1) 0%, rgba(131,58,180,1) 100%);
+  }
+}

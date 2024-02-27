@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#030014] ${showContent ? "overflow-y-scroll" : "overflow-y-hideen" } overflow-x-hidden`}
+        className={`${inter.className} bg-[#030014] ${showContent ? "overflow-y-scroll" : "overflow-y-hidden" } overflow-x-hidden`}
       >
         {showContent ? (
           <div className="fade-in">
