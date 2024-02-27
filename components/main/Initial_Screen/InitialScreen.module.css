@@ -121,4 +121,8 @@
   .bottomBar, .topBar {
     height: 10vh;
   }
+
+  .textContainer h1 {
+    font-size: 45px;
+  }
 }
