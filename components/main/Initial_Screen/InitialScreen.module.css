@@ -117,3 +117,8 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .bottomBar, .topBar {
+    height: 10vh;
+  }
+}
