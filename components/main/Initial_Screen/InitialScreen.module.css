@@ -124,11 +124,4 @@
     grid-template-rows: 10% 1fr 10%;
   }
   
-  .topBar{
-    height: 10%;
-  }
-
-  .bottomBar{
-    height: 10%;
-  }
 }
