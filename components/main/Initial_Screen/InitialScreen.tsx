@@ -25,7 +25,7 @@ const InitialScreen = (props: any) => {
       <div className={styles.topBar}></div>
       <div className={styles.media}>
         <StarsCanvas />
-        <div className={`${styles.textContainer} text-center`}>
+        <div className={`${styles.textContainer} text-center mb-10`}>
           <h1 className="anta text-6xl font-bold text-white mb-10 max-w-[700px]">
             {"Programming isn't about what you"}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">{" know; "}</span>
