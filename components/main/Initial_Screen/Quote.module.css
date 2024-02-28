@@ -1,0 +1,15 @@
+.textContainer {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .textContainer h1 {
+        font-size: 55px;
+    }
+}

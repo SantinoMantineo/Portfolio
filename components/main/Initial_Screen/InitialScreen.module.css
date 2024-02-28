@@ -33,16 +33,6 @@
   box-shadow: inset 0 0 15px #0d8aff70;
 }
 
-.textContainer {
-  grid-row: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 20px 10px 20px 10px;
-}
-
 .modelContainer {
   grid-row: 2;
   display: flex;
@@ -120,9 +110,5 @@
 @media screen and (max-width: 600px) {
   .bottomBar, .topBar {
     height: 10vh;
-  }
-
-  .textContainer h1 {
-    font-size: 55px;
   }
 }
