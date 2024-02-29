@@ -16,27 +16,29 @@ const InitialScreen = (props: any) => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       handleSkipIntro();
-    }, 10100);
+    }, 5000);
 
     return () => clearTimeout(timerId);
   }, [handleSkipIntro, setShowContent]);
 
   return (
     <div className={`${styles.initialScreen} ${fadeOutActive && styles.fadeOut} fade-in`}>
-      <div className={styles.topBar}></div>
+      <div className={styles.topBar}>
+      <div className={styles.borderOverlayTop}></div>
+      </div>
       <div className={styles.media}>
         <StarsCanvas />
         <Quote />
         {/* <div className={`${styles.modelContainer} w-full h-full`}></div> */}
       </div>
       <div className={styles.bottomBar}>
-        <div className={styles.borderOverlay}></div>
-        <button
+        <div className={styles.borderOverlayBottom}></div>
+        {/* <button
           className={`${styles.skipButton} anta text-6xl font-bold text-white text-center cursor-pointer rounded-lg pl-[10px] pr-[10px] z-[110]`}
           onClick={handleSkipIntro}
         >
           SKIP INTRO
-        </button>
+        </button> */}
       </div>
     </div>
   );
