@@ -11,7 +11,6 @@ const Quote = () => {
             {"it's about what you can"}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">{" figure out"}</span>
           </h1>
-          <h2 className="Welcome-text text-3xl text-white sm: text-2xl">- Chris Pine</h2>
         </div>
   );
 };
