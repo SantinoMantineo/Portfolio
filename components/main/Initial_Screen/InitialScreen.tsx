@@ -16,7 +16,7 @@ const InitialScreen = (props: any) => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       handleSkipIntro();
-    }, 6000);
+    }, 5500);
 
     return () => clearTimeout(timerId);
   }, [handleSkipIntro, setShowContent]);
