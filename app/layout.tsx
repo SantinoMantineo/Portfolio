@@ -17,23 +17,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
-  const [showContent, setShowContent] = useState(false);
-
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#030014] ${showContent ? "overflow-y-scroll" : "overflow-y-hidden" } overflow-x-hidden`}
+        className={`${inter.className} bg-[#030014] overflow-x-hidden`}
       >
-        {showContent ? (
           <div className="fade-in">
             <StarsCanvas />
             <Navbar />
             {children}
             <Footer />
           </div>
-        ) : (
-          <InitialScreen setShowContent={()=>{setShowContent(true)}}/>
-        )}
       </body>
     </html>
   );
